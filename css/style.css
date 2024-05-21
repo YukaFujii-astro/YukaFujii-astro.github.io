@@ -66,7 +66,7 @@ sub, sup{font-size:75%; line-height:0; position:relative; vertical-align:baselin
 sup{top:-0.5em}
 sub{bottom:-0.25em}
 dd{margin:0 0 0 40px} dt{font-weight: 700;}
-ul{list-style:none; list-style-image:none; margin:0; padding:0;} 
+ul{list-style:'+ '; list-style-image:none; margin: 0em 0em 0em 1em ; padding: 0px;} 
 ol{margin-left:10px; padding-left:10px;}
 img{border:0; -ms-interpolation-mode:bicubic; vertical-align:middle}
 svg:not(:root){overflow:hidden}
@@ -97,7 +97,7 @@ td{vertical-align:top}
 /* -- FORMS 
 ------------------------------------------------------------- */
 form{margin-top: 2em;}
-form li{margin-bottom: 1.5em;}
+form li{margin-bottom: 1.5em}
 label{display: block; margin-bottom:1em; font-weight: 700;}
 input, select, textarea {
 	border: 1px solid #DDD;
@@ -186,7 +186,8 @@ label.error { color: #0078CF; margin: 0.5em 0 0 0.5em; font-weight: normal; font
 
 /* -- TYPO
 ------------------------------------------------------------- */
-h1,h2,h3,h4,h5,h6{margin:0 0 1em; font-weight: normal;}
+/* h1,h2,h3,h4,h5,h6{margin:0 0 1em; font-weight: normal;} */
+h1,h2,h3,h4,h5,h6{margin:0 0 5px; font-weight: normal;}
 
 h1 {font-size: 3.6em; 
     letter-spacing: -0.03em;		
@@ -194,10 +195,11 @@ h1 {font-size: 3.6em;
 	color: #555;
 	margin: 0 0 0.5em; 
 	font-weight: normal; }
-h2 { font-size: 2.5em; margin: 0 0 20px; letter-spacing: -0.03em; color: #555; line-height: 1; }
-h3 { font-size: 1.75em; }
+h2 { font-size: 2.0em; margin: 0 0 20px; letter-spacing: -0.03em; color: #555; line-height: 1; }
+h3 { font-size: 1.5em; }
 h4 { font-size: 1.5em; }
-h5 { font-size: 1.17em; text-transform: uppercase; margin: 0; color: #555; }
+/* h5 { font-size: 1.17em; text-transform: uppercase; margin: 0; color: #555; } */
+h5 { font-size: 1.17em; margin: 0; color: #555; text-decoration:underline;}
 h6 { font-size: 1em; margin-bottom: 2px; font-weight: 700; }
 
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#333; text-decoration: none;}
@@ -283,7 +285,7 @@ a img:hover {
 /* -- HEADER
 ------------------------------------------------------------- */
 header#navtop { margin-bottom: 2em; clear: both; overflow: hidden; }
-    header nav ul { float: left; overflow: hidden; padding: 0 3em 0 2em; border-left: 1px solid #ddd; line-height: 2em; }
+header nav ul { float: left; overflow: hidden; padding: 0 3em 0 2em; border-left: 1px solid #ddd; line-height: 2em;}
 nav a, menu a { text-decoration: none; color: #555; }
 .navactive { color: #0078CF }
 .logo {margin-bottom: 3em;}
@@ -305,7 +307,7 @@ header .arrow {color: #999; font-style: italic;}
 footer  { color: #555; margin-bottom: 7em; }
 footer nav ul { float: right; overflow: hidden; }
 footer a {color: #999;}
-footer li { float: left; margin-right: 1em; padding-right: 1em; border-right: 1px solid #DDD; font-size: 0.8em; }
+footer li { float: left; margin-right: 1em; padding-right: 1em; border-right: 1px solid #DDD; font-size: 0.8em;}
 footer li:last-child { margin-right: 0; padding-right: 0; border-right: none; }
 .up a { display: block; text-align: center; margin: 0 auto; }
 
@@ -495,7 +497,7 @@ ul.page-numbers{float: right;overflow:hidden; display:block;}
 .comment{margin-bottom: 2em;}
 .comment p{font-size: 0.9em; color: #777;}
 .comment h6{margin-bottom: 0.5em;}
-.comment form ul li { margin-bottom: 2em }
+.comment form ul li { margin-bottom: 2em; list-style-type:square; }
 
 
 
